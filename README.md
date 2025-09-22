@@ -1,1 +1,3 @@
-# operating-systems-24-25
+# operating-systems
+
+Materials from Operating Systems Course
