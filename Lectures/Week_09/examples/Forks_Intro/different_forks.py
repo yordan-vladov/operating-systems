@@ -6,6 +6,9 @@ print("Starting the program...")
 # Fork the current process
 pid = os.fork() # Връща число
 # -1<= => Fork е неуспешен
+if pid <= -1:
+    print("Forks is unsuccesfull.")
+    exit(1)
 # 0 => Child процес
 # >=1 => Parent процес
 
