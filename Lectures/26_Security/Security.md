@@ -103,6 +103,19 @@ ls -ld /tmp
 # drwxrwxrwt 20 root root ... /tmp
 ```
 
+```bash
+# Задаване с chmod — символен начин
+chmod u+s file      # задава SUID
+chmod g+s dir       # задава SGID
+chmod +t dir        # задава Sticky bit
+
+# Задаване с chmod — октален начин (префикс пред стандартните права)
+chmod 4755 file     # SUID  + rwxr-xr-x
+chmod 2755 dir      # SGID  + rwxr-xr-x
+chmod 1777 dir      # Sticky + rwxrwxrwx (като /tmp)
+chmod 6755 file     # SUID + SGID + rwxr-xr-x
+```
+
 ---
 
 ### Намиране на опасни права
