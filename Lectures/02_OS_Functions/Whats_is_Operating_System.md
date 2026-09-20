@@ -141,6 +141,8 @@
 
 ![Boot_Process.jpeg](/Attachments/Boot_Process.jpeg)
 
+**Фиг. 1 Процес на зареждане на ОС**
+
 ---
 
 ## Слоеве в компютърната система
@@ -225,8 +227,9 @@
 	- например два прозореца на един и същ редактор
 - ОС създава, следи и прекратява процесите
 
-![Program_vs_Process.png](/Attachments/Program_vs_Process.png)
-<!-- TODO: изображение - един файл на диска -> два процеса в паметта със собствено състояние -->
+![Program_vs_Process.webp](/Attachments/Program_vs_Process.webp)
+
+**Фиг. 2 Програма срещу процес**
 
 ---
 
@@ -246,6 +249,8 @@
 ---
 
 ![Virtual_Processor.png](/Attachments/Virtual_Processor.png)
+
+**Фиг. 3 Виртуален процесор**
 
 ---
 
@@ -282,7 +287,11 @@ gcc -o cpu cpu.c
 - Така програма в безкраен цикъл не може да блокира системата
 - Други прекъсвания: дискът е приключил, натиснат е клавиш, дошъл е мрежов пакет
 
+---
+
 ![Timer_Interrupt.png](/Attachments/Timer_Interrupt.png)
+
+**Фиг. 4 Таймерно прекъсване и смяна на контекста**
 <!-- TODO: изображение - времева линия: процес A -> таймерно прекъсване -> ядро (context switch) -> процес B -->
 
 ---
@@ -312,6 +321,8 @@ gcc -o cpu cpu.c
 ---
 
 ![Virtual_Memory.png](/Attachments/Virtual_Memory.png)
+
+**Фиг. 5 Виртуална памет**
 
 ---
 
@@ -366,6 +377,8 @@ sudo sysctl -w kernel.randomize_va_space=2
 ---
 
 ![Multithreading.png](/Attachments/Multithreading.png)
+
+**Фиг. 6 Многонишковост**
 
 ---
 
@@ -448,6 +461,8 @@ Final value   : 200000
 
 ![Example_Firesystem.png](/Attachments/Example_Firesystem.png)
 
+**Фиг. 7 Пример за файлова система**
+
 ---
 ## Файлова система
 
@@ -474,17 +489,25 @@ gcc -o main main.c #компилиране на програма
 
 ![Opening_a_file.png](/Attachments/Opening_a_file.png)
 
+**Фиг. 8 Отваряне на файл**
+
 ---
 
 ![Writiing_To_A_File.png](/Attachments/Writiing_To_A_File.png)
+
+**Фиг. 9 Запис във файл**
 
 ---
 
 ![Closing_A_Connection.png](/Attachments/Closing_A_Connection.png)
 
+**Фиг. 10 Затваряне на връзка с файл**
+
 ---
 
 ![File_System_Abstraction.png](/Attachments/File_System_Abstraction.png)
+
+**Фиг. 11 Абстракция на файловата система**
 
 ---
 
