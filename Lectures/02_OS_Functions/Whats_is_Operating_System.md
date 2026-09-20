@@ -139,8 +139,7 @@
 - От този момент ядрото работи в привилегирован режим, докато компютърът е включен
 - Ще разгледаме темата по-подробно в следващия урок
 
-![Boot_Process.png](/Attachments/Boot_Process.png)
-<!-- TODO: изображение - стъпките BIOS/UEFI -> Boot loader -> Kernel -> User apps -->
+![Boot_Process.jpeg](/Attachments/Boot_Process.jpeg)
 
 ---
 
