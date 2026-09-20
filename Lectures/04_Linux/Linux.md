@@ -29,7 +29,9 @@
 ---
 
 ![](/Attachments/OS_Linux_Pic_1.png)
-- **Пингвинът Tux**
+
+**Фиг. 1 Пингвинът Tux**
+
 ---
 ## Linux, GNU/Linux и дистрибуция
 
@@ -60,7 +62,9 @@ uname -r              # коя версия на ядрото
 - Драйверите се зареждат като **модули** (`lsmod`, `modprobe`)
 - Ядрото е файл на диска (`/boot/vmlinuz-...`), който boot loader-ът зарежда в паметта
 
-![Linux_Kernel_Maps.png](/Attachments/Linux_Kernel_Maps.png)
+![LKM.svg](/Attachments/LKM.svg)
+
+**Фиг. 2 Зареждаеми модули на ядрото (LKM)**
 
 ---
 ## Linux ядро - Версии
@@ -101,6 +105,8 @@ uname -r    # пример за изход: 6.11.2-arch1-1
 ---
 
 ![Unix_History.png](/Attachments/Unix_History.png)
+
+**Фиг. 3 История на Unix**
 <!-- TODO: изображение - времева линия: Unix (1969) -> BSD, System V -> POSIX (1988) -> MINIX (1987) -> Linux (1991) -->
 
 ---
@@ -120,7 +126,9 @@ uname -r    # пример за изход: 6.11.2-arch1-1
 
 ---
 ![](/Attachments/OS_Linux_Pic_2.png)
-- **Ричард Столман**
+
+**Фиг. 4 Ричард Столман**
+
 ---
 
 ## Свободен софтуер
@@ -144,7 +152,9 @@ uname -r    # пример за изход: 6.11.2-arch1-1
 
 ---
 ![](/Attachments/OS_Linux_Pic_3.png)
-- **GNU лого**
+
+**Фиг. 5 GNU лого**
+
 ---
 ## MINIX
 
@@ -172,6 +182,8 @@ uname -r    # пример за изход: 6.11.2-arch1-1
 
 ---
 ![](/Attachments/OS_Linux_Pic_4.png)
+
+<!-- TODO: Фиг. 6 - добави име на човека на снимката -->
 
 ---
 ## GNU/Linux
@@ -318,17 +330,20 @@ sudo pacman -S htop        # Arch
 
 ---
 ![](/Attachments/OS_Linux_Pic_5.png)
-<!-- TODO: добави надпис - коя дистрибуция е на изображението -->
+
+**Фиг. 7 Ubuntu**
 
 ---
 
 ![](/Attachments/OS_Linux_Pic_6.png)
-**Debian**
+
+**Фиг. 8 Debian**
 
 ---
 
 ![](/Attachments/OS_Linux_Pic_7.png)
-<!-- TODO: добави надпис - коя дистрибуция е на изображението -->
+
+**Фиг. 9 Fedora**
 
 ---
 ## Rolling release
@@ -339,7 +354,8 @@ sudo pacman -S htop        # Arch
 ---
 
 ![](/Attachments/OS_Linux_Pic_8.png)
-<!-- TODO: добави надпис - коя дистрибуция е на изображението -->
+
+**Фиг. 10 Arch Linux**
 
 ---
 
@@ -351,6 +367,8 @@ sudo pacman -S htop        # Arch
 ---
 
 ![Distro_Family_Tree.png](/Attachments/Distro_Family_Tree.png)
+
+**Фиг. 11 Дърво на дистрибуциите**
 <!-- TODO: изображение - дърво на дистрибуциите: Debian -> Ubuntu -> Mint; Red Hat -> Fedora, RHEL; Arch -> Manjaro -->
 
 ---

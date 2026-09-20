@@ -25,6 +25,8 @@
 
 ![OS_Structure.png](/Attachments/OS_Structure.png)
 
+**Фиг. 1 Структура на операционната система**
+
 ---
 
 # Ядро
@@ -93,6 +95,8 @@ cat /proc/version     # как е компилирано ядрото
 
 ![HDD_vs_SSD.png](/Attachments/HDD_vs_SSD.png)
 
+**Фиг. 2 HDD срещу SSD**
+
 ---
 
 ## Драйвери - Видове
@@ -154,6 +158,8 @@ sudo modprobe <име>   # зареждане на модул
 ---
 
 ![Mode_Switch.png](/Attachments/Mode_Switch.png)
+
+**Фиг. 3 Превключване между потребителски режим и режим на ядрото**
 <!-- TODO: изображение - потребителски режим -> trap/системно извикване -> режим на ядрото -> връщане -->
 
 ---
@@ -182,7 +188,9 @@ sudo modprobe <име>   # зареждане на модул
 
 ---
 
-![Linux_Kernel_Map.png](/Attachments/Linux_Kernel_Maps.png)
+![LKM.svg](/Attachments/LKM.svg)
+
+**Фиг. 4 Зареждаеми модули на ядрото (LKM)**
 
 ---
 
@@ -223,8 +231,9 @@ sudo modprobe <име>   # зареждане на модул
 
 ---
 
-![Kernel_Types.png](/Attachments/Kernel_Types.png)
-<!-- TODO: изображение - сравнение на монолитно, микро и хибридно ядро - кои части са в режим на ядрото и кои в потребителски -->
+![Kernel_Types.webp](/Attachments/Kernel_Types.webp)
+
+**Фиг. 5 Видове ядра**
 
 ---
 
@@ -243,6 +252,8 @@ sudo modprobe <име>   # зареждане на модул
 ---
 
 ![Example_System_Calls.png](/Attachments/Example_System_Calls.png)
+
+**Фиг. 6 Пример за системни извиквания**
 
 ---
 
@@ -303,6 +314,8 @@ int main() {
 
 ![System_Call_Interface.png](/Attachments/System_Call_Interface.png)
 
+**Фиг. 7 Интерфейс на системните извиквания**
+
 ---
 
 ## Системни повиквания - параметри
@@ -316,6 +329,8 @@ int main() {
 ---
 
 ![Example_Parameters.png](/Attachments/Example_Parameters.png)
+
+**Фиг. 8 Пример за предаване на параметри**
 
 ---
 
@@ -420,6 +435,8 @@ echo $SHELL     # кой шел използвам
 
 ![Example_Terminal.png](/Attachments/Example_Terminal.png)
 
+**Фиг. 9 Пример за терминал**
+
 ---
 
 ## Графичен интерфейс
@@ -432,6 +449,8 @@ echo $SHELL     # кой шел използвам
 ---
 
 ![Example_DE.png](/Attachments/Example_DE.png)
+
+**Фиг. 10 Пример за десктоп среда**
 
 ---
 
