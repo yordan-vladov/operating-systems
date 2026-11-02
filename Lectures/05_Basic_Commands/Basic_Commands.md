@@ -17,6 +17,7 @@
 - Показва пълния път до текущата директория
 
 ```bash
+# Показва пълния път до текущата директория
 $ pwd
 /home/user/Documents
 ```
@@ -27,6 +28,7 @@ $ pwd
 - Показва потребителското име на текущия потребител
 
 ```bash
+# Показва името на текущия потребител
 $ whoami
 user
 ```
@@ -41,9 +43,11 @@ user
     - `-h` — размери в четим формат
 
 ```bash
+# Показва съдържанието на текущата директория
 $ ls
 Desktop  Documents  Downloads
 
+# Показва съдържанието в подробен формат, включително скритите файлове
 $ ls -la
 drwxr-xr-x  2 user user 4096 Apr 20 10:00 Desktop
 ```
@@ -58,8 +62,13 @@ drwxr-xr-x  2 user user 4096 Apr 20 10:00 Desktop
     - `~` — домашната директория
 
 ```bash
+# Преминава в директорията на посочения абсолютен път
 $ cd /home/user/Documents
+
+# Преминава в родителската директория
 $ cd ..
+
+# Преминава в домашната директория
 $ cd ~
 ```
 
@@ -73,7 +82,10 @@ $ cd ~
 - `-p` — създава и липсващи родителски директории
 
 ```bash
+# Създава директория my_folder в текущата директория
 $ mkdir my_folder
+
+# Създава lab1 заедно с липсващите родителски директории projects и os
 $ mkdir -p projects/os/lab1
 ```
 
@@ -84,7 +96,10 @@ $ mkdir -p projects/os/lab1
 - Ако файлът съществува, обновява времето му на промяна
 
 ```bash
+# Създава празен файл file.txt или обновява времето му на промяна, ако вече съществува
 $ touch file.txt
+
+# Създава два файла наведнъж
 $ touch script.sh notes.md
 ```
 
@@ -98,7 +113,10 @@ $ touch script.sh notes.md
 - **Внимание:** операцията е необратима
 
 ```bash
+# Изтрива файла file.txt
 $ rm file.txt
+
+# Изтрива директорията my_folder с цялото ѝ съдържание, без потвърждение
 $ rm -rf my_folder
 ```
 
@@ -109,7 +127,10 @@ $ rm -rf my_folder
 - `-r` — рекурсивно копиране на директории
 
 ```bash
+# Копира file.txt в нов файл backup.txt
 $ cp file.txt backup.txt
+
+# Копира директорията folder с цялото ѝ съдържание във folder_backup
 $ cp -r folder/ folder_backup/
 ```
 
@@ -119,7 +140,10 @@ $ cp -r folder/ folder_backup/
 - **Move** — премества или преименува файлове и директории
 
 ```bash
+# Преименува old_name.txt на new_name.txt
 $ mv old_name.txt new_name.txt
+
+# Премества file.txt в директорията /home/user/Documents/
 $ mv file.txt /home/user/Documents/
 ```
 
@@ -133,6 +157,7 @@ $ mv file.txt /home/user/Documents/
     - `Ctrl + W` — търсене
 
 ```bash
+# Отваря file.txt в редактора nano (ако файлът не съществува, ще бъде създаден при запазване)
 $ nano file.txt
 ```
 
@@ -146,10 +171,14 @@ $ nano file.txt
 - Може да се използва за запис във файл
 
 ```bash
+# Извежда текста на стандартния изход
 $ echo "Hello, World!"
 Hello, World!
 
+# Записва текста в os.txt, като презаписва съдържанието на файла
 $ echo "Linux" > os.txt
+
+# Добавя текста в края на os.txt, без да изтрива съществуващото съдържание
 $ echo "Ubuntu" >> os.txt
 ```
 
@@ -161,10 +190,12 @@ $ echo "Ubuntu" >> os.txt
 - `-n` — номерира редовете
 
 ```bash
+# Извежда съдържанието на os.txt
 $ cat os.txt
 Linux
 Ubuntu
 
+# Извежда съдържанието на os.txt с номерирани редове
 $ cat -n os.txt
      1	Linux
      2	Ubuntu
@@ -180,9 +211,11 @@ $ cat -n os.txt
     - `-c` — само байтове
 
 ```bash
+# Показва броя на редовете, думите и байтовете в os.txt
 $ wc os.txt
  2  2 13 os.txt
 
+# Показва само броя на редовете в os.txt
 $ wc -l os.txt
 2 os.txt
 ```

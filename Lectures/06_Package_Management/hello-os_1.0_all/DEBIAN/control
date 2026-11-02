@@ -1,0 +1,6 @@
+Package: hello-os
+Version: 1.0
+Architecture: all
+Maintainer: Ivan Ivanov <ivan@example.com>
+Depends: bash
+Description: Simple example package
