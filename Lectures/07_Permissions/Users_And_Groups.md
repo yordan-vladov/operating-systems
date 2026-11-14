@@ -1,6 +1,5 @@
 # Linux - Потребители и Групи
 
----
 ## Съдържание
 
 - Какво са потребители и групи?
@@ -151,6 +150,7 @@ useradd <user>
 
 ## useradd - Опции
 
+- "-m" - създава home директорията (без него в Ubuntu тя **не** се създава)
 - "-d \<home_dir>" -  home директория
 - "-s \<shell>" - шела на този потребител
 - "-e \<date>" - дата на изтичане
@@ -162,6 +162,56 @@ useradd <user>
 
 ```bash
 useradd -d /home/john -s /bin/bash john
+
+# Създава потребителя maria заедно с home директория /home/maria
+sudo useradd -m -s /bin/bash maria
+sudo passwd maria
+```
+
+---
+## adduser
+
+- В Debian/Ubuntu има и по-удобна интерактивна команда
+- Създава home директорията и пита за парола
+
+```bash
+sudo adduser maria
+```
+
+---
+## Влизане от името на друг потребител - su
+
+- **su** (*substitute user*) - стартира нов shell от името на друг потребител
+- Иска паролата на **другия** потребител
+- `-` (или `-l`) - зарежда средата на потребителя, както при истински вход (home директория, PATH, ...)
+- С `exit` се връщаме към предишния потребител
+
+```bash
+$ whoami
+user
+$ su - maria
+Password:
+maria@system:~$ whoami
+maria
+maria@system:~$ exit
+$ whoami
+user
+```
+
+---
+## sudo -u и sudo -i
+
+- Ако нямаме паролата на другия потребител, но имаме **sudo** права:
+
+```bash
+# Изпълнява една команда от името на maria
+sudo -u maria whoami
+
+# Стартира shell от името на maria
+sudo -iu maria
+
+# Стартира root shell
+sudo -i
 ```
 
 ---
@@ -235,7 +285,13 @@ stamat : stamat wheel docker
 
 ```
 usermod -a -G example_group example_user
+
+# Добавя потребителя към няколко групи наведнъж
+sudo usermod -aG engteam,admteam engineer
 ```
+
+- **Внимание:** без `-a` (*append*) потребителят се **премахва** от всички вторични групи, които не са изброени след `-G`
+- Промяната в групите важи от **следващото** влизане на потребителя в системата
 
 ---
 ## Премахване на потребител от група

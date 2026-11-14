@@ -4,8 +4,8 @@ tar -cvf etc_backup.tar /etc
 # Unzip the "etc_backup.tar" archive to the current directory
 tar -xvf etc_backup.tar
 
-# Add all files with the extension ".md" from the current directory to the "etc_backup.tar" archive
-tar -rvf etc_backup.tar *.md
+# Add all files with the extension ".md" from the current directory to the "backup.tar" archive
+tar -rvf backup.tar *.md
 
 # List all files and directories in the "etc_backup.tar" archive
 tar -tvf etc_backup.tar

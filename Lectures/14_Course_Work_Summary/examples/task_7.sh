@@ -58,7 +58,7 @@ xfce4-calculator &
 ps -o pid,comm,nlwp -p "$(pgrep xfce4-calculator)"
 
 # 17. Изпращане на SIGTERM към процеси, чиито имена завършват на 'r'
-pkill -TERM -f 'r$'
+pkill -TERM 'r$'
 
 # 18. Изпращане на SIGKILL към процес по PID
 kill -9 <PID>
