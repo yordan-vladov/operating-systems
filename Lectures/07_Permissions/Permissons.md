@@ -181,7 +181,7 @@ chmod a-wx file_2.txt
 ## octal - примери
 
 ```bash
-chmod 755 file_1.txt
+chmod 755 dir
 chmod 644 file_2.txt
 chmod 777 file_3.txt
 chmod 600 file_4.txt
